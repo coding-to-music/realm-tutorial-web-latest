@@ -119,6 +119,12 @@ Failed to load plugin 'flowtype' declared in 'BaseConfig » /mnt/volume_nyc1_01/
 Failed to load plugin 'flowtype' declared in 'BaseConfig » /mnt/volume_nyc1_01/realm-tutorial-web-latest/node_modules/react-scripts/node_modules/eslint-config-react-app/index.js': Package subpath './lib/rules/no-unused-expressions' is not defined by "exports" in /mnt/volume_nyc1_01/realm-tutorial-web-latest/node_modules/eslint/package.json
 ```
 
+The above errors may have gone away
+
+This is visible on port 3000 although I can't log in or register a new account
+
+![image](https://user-images.githubusercontent.com/3156358/151671206-a5531ebb-e68f-4bc7-8dbd-069c636a831c.png)
+
 ## Troubleshooting
 
 - Be sure to **check the logs in Realm UI** for more information as well as the console in your app.
