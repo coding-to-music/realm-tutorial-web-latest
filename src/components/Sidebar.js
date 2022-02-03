@@ -39,6 +39,75 @@ export default function Sidebar({
           }}
         />
       </Card>
+      <Card>
+        <SectionHeading>Memes</SectionHeading>
+        <SectionList>
+          {projects.map((project) => (
+            <SectionListItem
+              key={project.partition}
+              onClick={() => setCurrentProject(project)}
+              isSelected={project.partition === currentProject?.partition}
+            >
+              {project.name}
+            </SectionListItem>
+          ))}
+        </SectionList>
+        <UserDetails
+          user={app.currentUser}
+          handleLogout={() => {
+            app.logOut();
+          }}
+          handleEditPermissions={() => {
+            setIsEditingPermissions(true);
+          }}
+        />
+      </Card>
+      <Card>
+        <SectionHeading>Hacker News</SectionHeading>
+        <SectionList>
+          {projects.map((project) => (
+            <SectionListItem
+              key={project.partition}
+              onClick={() => setCurrentProject(project)}
+              isSelected={project.partition === currentProject?.partition}
+            >
+              {project.name}
+            </SectionListItem>
+          ))}
+        </SectionList>
+        <UserDetails
+          user={app.currentUser}
+          handleLogout={() => {
+            app.logOut();
+          }}
+          handleEditPermissions={() => {
+            setIsEditingPermissions(true);
+          }}
+        />
+      </Card>
+      <Card>
+        <SectionHeading>Tweets</SectionHeading>
+        <SectionList>
+          {projects.map((project) => (
+            <SectionListItem
+              key={project.partition}
+              onClick={() => setCurrentProject(project)}
+              isSelected={project.partition === currentProject?.partition}
+            >
+              {project.name}
+            </SectionListItem>
+          ))}
+        </SectionList>
+        <UserDetails
+          user={app.currentUser}
+          handleLogout={() => {
+            app.logOut();
+          }}
+          handleEditPermissions={() => {
+            setIsEditingPermissions(true);
+          }}
+        />
+      </Card>
     </SidebarContainer>
   );
 }
